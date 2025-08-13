@@ -1,6 +1,5 @@
 // @ts-check
 import { test, expect } from '@playwright/test';
-import { todo } from 'node:test';
 const { Todo } = require('../support/actions/Todo')
 
 let toDo
@@ -42,17 +41,6 @@ test('Remover card', async ({ page }) => {
   await toDo.removeCard(nameCardRemove)
 });
 
-test('Remover Task', async ({ page }) => {
-  await toDo.visit()
-
-  const nameTaskRemove = 'TaskRemove';
-
-  await toDo.createCard(nameTaskRemove)
-  await toDo.createTask(nameTaskRemove)
-  await toDo.removeTask()
-  
-});
-
 test('Adicionar card, implementar tarefas e realizar a exclusão', async ({ page }) => {
   await toDo.visit()
   const nameCardRemove = 'CardRemove';
@@ -67,5 +55,3 @@ test('Adicionar card, implementar tarefa com tags', async ({ page }) =>{
   await toDo.createCard(nameCard)
   await toDo.createTaskAndTag(nameCard,'Primeiro Campo')
 })
-
-

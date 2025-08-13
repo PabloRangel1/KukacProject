@@ -58,4 +58,11 @@ export class Todo{
                 await this.page.locator('.custom-input p', {hasText: 'Adicionar nova Tag'})
     }
 
+    async removeCard(nameCard){
+        expect(await this.page.locator(`#${nameCard}CreateTask`).click())
+        await this.page.locator(`.header #${nameCard}trash`).click()
+    }
+
+
+
 }  

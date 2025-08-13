@@ -1,8 +1,8 @@
-# Testes Automatizados - Kukac
+#  Testes Automatizados - Kukac
 
-Este projeto contém uma suíte de testes automatizados desenvolvida com Playwright para validar as funcionalidades do **Quadro Kanban**:
+Este projeto contém uma suíte de testes automatizados desenvolvida com [Playwright](https://playwright.dev/) para validar as funcionalidades do **Quadro Kanban**:
 
-🔗**https://kanban-dusky-five.vercel.app/**
+**https://kanban-dusky-five.vercel.app/**
 
 ---
 
@@ -18,7 +18,7 @@ Este projeto contém uma suíte de testes automatizados desenvolvida com Playwri
 
 
 
-## 📜 Cenários de Teste
+##  Cenários de Teste
 
 Os testes cobrem as seguintes funcionalidades:
 
@@ -37,13 +37,10 @@ Os testes cobrem as seguintes funcionalidades:
 5. **Remover Card**  
    - Cria e remove um card do quadro.
 
-6. **Remover Task**  
-   - Cria um card, adiciona tarefas e remove uma tarefa específica.
-
-7. **Fluxo Completo de Adição e Exclusão**  
+6. **Fluxo Completo de Adição e Exclusão**  
    - Adiciona card, cria tarefas e remove o card criado.
 
-8. **Adicionar Card com Tarefas e Tags**  
+7. **Adicionar Card com Tarefas e Tags**  
    - Cria um card, adiciona tarefas e associa múltiplas tags.
 
 ---
@@ -57,10 +54,19 @@ Antes de executar, certifique-se de ter instalado:
 
 ---
 
-## 📦 Instalação
+##  Instalação
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/seu-usuario/projeto-kanban-tests.git
+1. git clone https://github.com/seu-usuario/projeto-kanban-tests.git
 
+2.Executar testes em Headless
+npx playwright test 
 
+3.Executar ver o relatório dos testes
+npx playwright show-report
+
+4. Executar interface para visualização dos testes.
+npx playwright test --ui
+```
+▶️[Video de auxilio]()
