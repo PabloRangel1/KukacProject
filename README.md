@@ -69,4 +69,4 @@ npx playwright show-report
 4. Executar interface para visualização dos testes.
 npx playwright test --ui
 ```
-▶️[Video de auxilio]()
+▶️[Vídeo de auxílio](https://www.youtube.com/watch?v=LHGt23zn_qw)
